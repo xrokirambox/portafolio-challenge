@@ -1,0 +1,1030 @@
+/*fuentes*/
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+/* Definición variables de colores y fuentes */
+:root{
+    --color-amarillo:#FCB530;
+    --color-gris:#282828;
+    --color-blanco:#ffffff;
+    --color-rosa:#ED56C2;
+    --color-azul:#238DE8;
+    --color-verde:#01B32C;
+    --color-rojo:#e83b3b;
+    --fuente-raleway:"Raleway",sans-serif;
+   
+}
+
+/* Estilización de cabecera */
+
+.cabecera{
+    display: flex;
+    gap: 20%;
+    justify-content: space-between;
+    padding-right:30px;
+    width: 98%;
+    align-items: center;
+    position: fixed;
+    z-index: 1000;
+    padding-top: 15px;
+    padding-left: 20px;
+    
+}
+
+.cabecera_img{
+    width: 7%;
+    border-radius: 50px;
+    margin-left: 30px;
+}
+
+.cabecera_list{
+    border-radius: 25px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7%;
+    width: 60%;
+    font-family: var(--fuente-raleway);
+    font-weight: 600;
+    background-color: var(--color-blanco);
+    margin-right: 40px;
+}
+
+.cabecera_nombre{
+    font-size: 1em;
+    
+}
+
+/* --------------------------------------------------------------------------------- */
+
+/* Estilización primera página */
+
+    .cuerpo_primera_pag_bloque{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 9%;
+        gap: 3%;
+        background-image: url(../assets/Zoom\ background.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 530px;
+       
+    }
+
+    /* Estilización textos primera página */
+
+    .cuerpo_segunda_pag_titulo_blo{
+        display: flex;
+        justify-content: center;
+    }
+    .cuerpo_primera_pag_text{
+        display: flex;
+        justify-content: center;
+        font-family: var(--fuente-raleway);
+        flex-direction: column;
+        gap: 25px;
+        padding-left: 40px;
+        margin-bottom: 90px;
+
+    }
+    .cuerpo_primera_pag-titulouno{
+        color: var(--color-blanco);
+        font-size: 2.5rem;
+    }
+    .cuerpo_primera_pag-titulodos{
+        color: var(--color-amarillo);
+        font-size: 2.8rem;
+    }
+    .cuerpo_primera_pag-parra{
+        color: var(--color-blanco);
+        font-size: 1.5rem;
+        text-align: left;
+        line-height: 30px;
+        width: 520px;
+    }
+    .cuerpo_primera_pag-boton{
+        border: 2px solid var(--color-amarillo);
+        font-family: var(--fuente-raleway);
+        color: var(--color-blanco);
+        font-size: 1rem;
+        font-weight: 600;
+        border-radius: 15px;
+        height: 40px;
+        width: 180px;
+        margin-left: 180px;
+        cursor: pointer;
+        
+    }
+    .cuerpo_primera_pag-boton:hover{
+        background-color: var(--color-amarillo);
+        color:var(--color-gris);
+        transition: 0.1s ease-out;
+        transform: scale(1.05);
+        border-color: #8a5a00;
+    }
+
+    .cuerpo_primera_pag-boton:hover::before{
+        animation: shine 1.5s ease-out infinite;
+    }
+
+    
+
+    /* Estilización de imagen primera página */
+    .cuerpo_foto{
+        border: 5px solid #FCB530;
+        width: 80%;   
+    }
+
+    /*  Estilización de botones de las redes sociales primera página */
+    .cuerpo_botones{
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        width: 150%;
+    }
+
+    .cuerpo_botones_esti{
+        display: flex;
+        font-family: var(--fuente-raleway);
+        font-size: 1em;
+        color: var(--color-blanco);
+        background-color: var(--color-gris);
+        border-radius: 25px;
+        align-items: center;
+        justify-content: center;
+        gap: 5%;
+        height: 55px;
+        box-shadow: var(--color-gris) 0px 20px 40px -12px , var(--color-amarillo) 0px 15px 23px -15px ;
+    }
+
+    .cuerpo_botones_esti:hover{
+        box-shadow: 2px 2px 4px var(--color-blanco);
+        cursor: pointer;
+        transition: 0.3s ease-out;
+    }
+
+     /* Inserción de logos para botones primera página*/
+            .cuerpo_logo_Git::before{
+                content: url(../assets/Githubs.png);
+            }
+            .cuerpo_logo_Link::before{
+                content: url(../assets/Linkii.png);
+            }
+            .cuerpo_logo_Insta{
+                content: url(../assets/instagramn.png);
+            }
+            .cuerpo_logo_Curri{
+                content: url(../assets/face.png);
+            }
+
+
+ /* --------------------------------------------------------------------------------- */
+/* Estilización segunda página */
+
+.cuerpo_segunda_pag_bloque{
+        display: flex;
+        align-items: center;
+        padding-top: 8%;
+        background-image: url(../assets/fondo-dos.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 530px;
+        border-top: 2px solid var(--color-gris);
+        gap: 6%;
+        padding-right: 2%;
+}
+
+/* Texto sobre mi */
+
+.cuerpo_segunda_pag_titulo{
+    font-family: var(--fuente-raleway);
+    color: var(--color-blanco);
+    text-align: center;
+    line-height: 30px;
+    font-size: 1.5rem;
+    font-weight: 400;
+    width: 415px;
+    margin-top: 60px;
+    padding-left: 2%;
+}
+    .resaltado{
+        color: var(--color-amarillo);
+    }
+
+/* organización sobre mi e imagen */
+
+.cuerpo_segunda_pag_sobremi{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+}
+
+/* titulo sobre mi */
+
+.cuerpo_segunda_pag_titulo_sobremi{
+    font-family: var(--fuente-raleway);
+    font-size: 50px;
+    font-weight: 800;
+    color: var(--color-gris);
+}
+
+/* imagen sobre mi */
+.cuerpo_foto_dos{
+    width: 75%;
+    border-radius: 100px;
+    border: 4px solid var(--color-gris);
+    margin-right: 2%;
+}
+
+/* Organización botones segunda página */
+.cuerpo_segunda_pag_botones{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    
+}
+
+    /* titulo */
+    .titulo_habilidades{
+        font-family: var(--fuente-raleway);
+        font-size: 2.5rem;
+        font-weight: 800;
+        color: var(--color-amarillo);
+    }
+
+    /* botones segunda página */
+    .cuerpo_segunda_lista_habilidades{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 30px;
+    }
+    /* Estilización botones */
+    .botones_segunda_pag {
+        border: 2px solid var(--color-amarillo);
+        background-color: var(--color-amarillo);
+        font-family: var(--fuente-raleway);
+        font-weight: 600;
+        width: 95%;
+        font-size: 1.4rem;
+        color: var(--color-gris);
+        border-radius: 10px;
+        height: 120px;
+        text-align: center;
+        align-content: center;
+        box-shadow: 15px 15px 30px rgb(25, 25, 25),
+                    -15px -15px 30px rgb(60, 60, 60);
+        transition: 0.3s ease; /* Suaviza la transición */
+    }
+    
+    /* Efecto de luz al pasar el mouse sobre los botones */
+    .botones_segunda_pag:hover {
+        animation: luz 0.5s forwards; /* Llama a la animación de luz */
+    }
+    
+    /* Definición de la animación de luz */
+    @keyframes luz {
+        0% {
+            box-shadow: 0 0 5px rgba(255, 0, 0, 0.5), 0 0 10px rgba(255, 0, 0, 0.3); /* Cambiado a rojo */
+        }
+        50% {
+            box-shadow: 0 0 20px rgba(255, 0, 0, 0.7), 0 0 30px rgba(255, 0, 0, 0.5); /* Cambiado a rojo */
+        }
+        100% {
+            box-shadow: 0 0 5px rgba(255, 0, 0, 0.5), 0 0 10px rgba(255, 0, 0, 0.3); /* Cambiado a rojo */
+        }
+    }
+    
+    /* Estilos específicos para cada botón */
+    .botones_segunda_pag:nth-child(1) {
+        background-color: var(--color-rosa);
+        border: none;
+        background-image: url(../assets/Iconos/stars.png);
+        background-repeat: no-repeat;
+        background-size: 15%;
+        background-position: 90% 10%;
+    }
+    
+    .botones_segunda_pag:nth-child(2) {
+        background-color: var(--color-azul);
+        border: none;
+        background-image: url(../assets/Iconos/stars.png);
+        background-repeat: no-repeat;
+        background-size: 15%;
+        background-position: 90% 10%;
+    }
+    
+    .botones_segunda_pag:nth-child(3) {
+        background-color: var(--color-verde);
+        border: none;
+        background-image: url(../assets/Iconos/stars.png);
+        background-repeat: no-repeat;
+        background-size: 15%;
+        background-position: 90% 10%;
+    }
+    
+    .botones_segunda_pag:nth-child(4) {
+        border: none;
+        background-image: url(../assets/Iconos/stars.png);
+        background-repeat: no-repeat;
+        background-size: 15%;
+        background-position: 90% 10%;
+    }
+    
+
+
+/* --------------------------------------------------------------------------------- */
+/* estilización tercera página */
+.cuerpo_tercera_pag_bloque{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top:110px;
+        gap: 35px;
+        background-image: url(../assets/fond_tres.png );
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 0% 0%;
+        height: 530px;
+        border-top: 2px solid var(--color-gris);
+}
+
+/* Bloque titulo y tarjetas */
+.cuerpo_tercera_pag_bloque_Skills{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    }
+.cuerpo_tercera_pag_bloque_hobiies{
+    display: flex;
+    align-items: center;
+}
+
+    /* Titulo Skills */
+
+    .cuerpo_tercera_pag_titulo-skills{
+        font-family: var(--fuente-raleway);
+        font-size: 2.5rem;
+        font-weight: 900;
+        color: var(--color-amarillo);   
+    }
+
+    /* Bloque Tartejas Skills */
+    .tercera_pag_tarjetas{
+        display: flex;
+        gap: 20px;
+        padding-left: 40px;
+        padding-right: 40px;
+        
+    }
+        
+
+    /*  estilización Tarjetas Skills */
+    .tercera_pag_tarjetas_edit{
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+        height: 180px;
+        width: 150px;
+        background-color: var(--color-amarillo);
+        border-radius: 5px;
+        gap: 30px; 
+        font-family: var(--fuente-raleway);
+        font-size: medium;
+        font-weight: 500;   
+    }
+ 
+    /* HTML5 */
+   /* Estilo base para las tarjetas de habilidades */
+.tercera_pag_tarjetas_edit {
+    transition: 0.3s ease-out; /* Suaviza la transición */
+  }
+  
+  /* Efecto de luz al pasar el mouse sobre las tarjetas */
+  .tercera_pag_tarjetas_edit:hover {
+    animation: luz 0.5s forwards; /* Llama a la animación de luz */
+  }
+  
+  /* Definición de la animación de luz */
+  @keyframes luz {
+    0% {
+      box-shadow: 0 0 5px rgba(255, 255, 255, 0.5), 0 0 10px rgba(255, 255, 255, 0.3);
+    }
+    50% {
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.7), 0 0 30px rgba(255, 255, 255, 0.5);
+    }
+    100% {
+      box-shadow: 0 0 5px rgba(255, 255, 255, 0.5), 0 0 10px rgba(255, 255, 255, 0.3);
+    }
+  }
+  
+  /* Efecto específico para cada tarjeta cuando se pasa el mouse */
+  .tercera_pag_tarjetas_edit:nth-child(1):hover {
+    outline: 2px solid var(--color-azul);
+  }
+  
+  .tercera_pag_tarjetas_edit:nth-child(2):hover {
+    outline: 2px solid var(--color-amarillo);
+  }
+  
+  .tercera_pag_tarjetas_edit:nth-child(3):hover {
+    outline: 2px solid var(--color-rosa);
+  }
+  
+  .tercera_pag_tarjetas_edit:nth-child(4):hover {
+    outline: 2px solid var(--color-verde);
+  }
+  
+  .tercera_pag_tarjetas_edit:nth-child(5):hover {
+    outline: 2px solid var(--color-rojo);
+  }
+  
+  /* Estilo específico para cada tarjeta */
+  .tercera_pag_tarjetas_edit:nth-child(1) {
+    background-image: url(../assets/Iconos/html5.png);
+    background-position: 400% 250%;
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-color: var(--color-azul);
+    box-shadow: 0px 2px 4px var(--color-azul);
+  }
+  
+  /* JS */
+  .tercera_pag_tarjetas_edit:nth-child(2) {
+    background-image: url(../assets/Iconos/javascript.png);
+    background-position: 130% 135%;
+    background-size: 70%;
+    background-repeat: no-repeat;
+    box-shadow: 0px 2px 4px var(--color-amarillo);
+  }
+  
+  /* React */
+  .tercera_pag_tarjetas_edit:nth-child(3) {
+    background-image: url(../assets/Iconos/PHP.PNG);
+    background-position: 420% 230%;
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-color: var(--color-rosa);
+    box-shadow: 0px 2px 4px var(--color-rosa);
+  }
+  
+  /* CSS */
+  .tercera_pag_tarjetas_edit:nth-child(4) {
+    background-image: url(../assets/Iconos/css.png);
+    background-position: 400% 230%;
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-color: var(--color-verde);
+    box-shadow: 0px 2px 4px var(--color-verde);
+  }
+  
+  /* Git & Github */
+  .tercera_pag_tarjetas_edit:nth-child(5) {
+    background-image: url(../assets/Iconos/Gitt.png);
+    background-position: 420% 230%;
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-color: var(--color-rojo);
+    box-shadow: 0px 2px 4px var(--color-rojo);
+  }
+  
+
+    
+    /* Estilización tarjetas hobbies */
+.tercera_pag_tarjetas_edit_hobii {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 180px;
+    width: 150px;
+    background: linear-gradient(to bottom, #161616, #242424);
+    border: none;
+    color: var(--color-blanco);
+    border-radius: 5px;
+    gap: 30px;
+    font-family: var(--fuente-raleway);
+    font-weight: 100;
+    font-size: 1.4rem;
+    transition: 0.3s ease-out; /* Suaviza la transición */
+}
+
+/* Efecto de luz al pasar el mouse sobre las tarjetas */
+.tercera_pag_tarjetas_edit_hobii:hover {
+    animation: luz 0.5s forwards; /* Llama a la animación de luz */
+}
+
+/* Definición de la animación de luz */
+@keyframes luz {
+    0% {
+        box-shadow: 0 0 5px rgba(249, 249, 249, 0.5), 0 0 10px rgba(255, 255, 255, 0.3);
+    }
+    50% {
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.7), 0 0 30px rgba(255, 255, 255, 0.5);
+    }
+    100% {
+        box-shadow: 0 0 5px rgba(255, 255, 255, 0.5), 0 0 10px rgba(255, 255, 255, 0.3);
+    }
+}
+
+/* Efecto específico para cada tarjeta cuando se pasa el mouse */
+.tercera_pag_tarjetas_edit_hobii:nth-child(1):hover {
+    outline: 2px solid var(--color-amarillo);
+}
+
+.tercera_pag_tarjetas_edit_hobii:nth-child(2):hover {
+    outline: 2px solid var(--color-azul);
+}
+
+.tercera_pag_tarjetas_edit_hobii:nth-child(3):hover {
+    outline: 2px solid var(--color-verde);
+}
+
+.tercera_pag_tarjetas_edit_hobii:nth-child(4):hover {
+    outline: 2px solid var(--color-rosa);
+}
+
+.tercera_pag_tarjetas_edit_hobii:nth-child(5):hover {
+    outline: 2px solid var(--color-blanco);
+}
+
+.tercera_pag_tarjetas_edit_hobii:nth-child(6):hover {
+    outline: 2px solid var(--color-amarillo);
+}
+
+/* Estilos específicos para cada tarjeta */
+.tercera_pag_tarjetas_edit_hobii:nth-child(1) {
+    box-shadow: 0px 2px 4px var(--color-amarillo);
+    background-image: url(../assets/Iconos/Gym.png);
+    background-position: 120% 140%;
+    background-size: 70%;
+    background-repeat: no-repeat;
+}
+
+.tercera_pag_tarjetas_edit_hobii:nth-child(2) {
+    box-shadow: 0px 2px 4px var(--color-azul);
+    background-image: url(../assets/Iconos/Soccer.png);
+    background-position: 120% 130%;
+    background-size: 70%;
+    background-repeat: no-repeat;
+}
+
+.tercera_pag_tarjetas_edit_hobii:nth-child(3) {
+    box-shadow: 0px 2px 4px var(--color-verde);
+    background-image: url(../assets/Iconos/Libros.png);
+    background-position: 120% 130%;
+    background-size: 70%;
+    background-repeat: no-repeat;
+}
+
+.tercera_pag_tarjetas_edit_hobii:nth-child(4) {
+    box-shadow: 0px 2px 4px var(--color-rosa);
+    background-image: url(../assets/Iconos/Senderi.png);
+    background-position: 120% 130%;
+    background-size: 70%;
+    background-repeat: no-repeat;
+}
+
+.tercera_pag_tarjetas_edit_hobii:nth-child(5) {
+    box-shadow: 0px 2px 4px var(--color-blanco);
+    background-image: url(../assets/Iconos/Musi.png);
+    background-position: 120% 130%;
+    background-size: 70%;
+    background-repeat: no-repeat;
+}
+
+.tercera_pag_tarjetas_edit_hobii:nth-child(6) {
+    box-shadow: 0px 2px 4px var(--color-amarillo);
+    background-image: url(../assets/Iconos/Tradi.png);
+    background-position: 120% 130%;
+    background-size: 70%;
+    background-repeat: no-repeat;
+}
+
+
+/* ---------------------------------------------------------------------------------------------------------------- */
+/* Estilización 4 página */
+
+.cuerpo_cuarta_pag_bloque{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        padding-top:110px;
+        gap: 25px;
+        background-image: url(../assets/Fondo_cuatro.png );
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 0% 0%;
+        height: 530px;
+        border-top: 2px solid var(--color-gris);
+}
+
+.cuerpo_cuarta_titulo{
+    font-family: var(--fuente-raleway);
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: var(--color-amarillo);
+    margin-bottom: 30px;
+}
+
+
+/* estilización bloque tarjetas */
+.cuarta_pag_tarjetas-bloque{
+    display: flex;
+    justify-content:center;
+}
+.cuarta_pag_tarjetas{
+    display: flex;
+        gap: 50px;
+        width: 80%;
+        justify-content: center;    
+}
+
+    /* estilización de tarjetas (formación) */
+    .cuarta_pag_tarjetas-edit{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 30%;
+        height: 300px;
+        background: #222222;
+        border-radius: 30px;
+        box-shadow: 15px 15px 30px rgb(25, 25, 25);
+        gap: 30px;
+        transition: 0.3s ease-out;
+        
+    }
+
+    .cuarta_pag_tarjetas-edit:nth-child(1){
+        animation: hoverA 6s infinite;
+        transition: 0.1s ease-out;
+    }
+    .cuarta_pag_tarjetas-edit:nth-child(2){
+        animation: hoverB 6s infinite;
+        transition: 0.1s ease-out;
+    }
+    .cuarta_pag_tarjetas-edit:nth-child(3){
+        animation: hoverC 6s infinite;
+        transition: 0.1s ease-out;
+
+    }
+
+    /* Sombra carta USco */
+    .cuarta_pag_tarjetas-edit:nth-child(1):hover{
+        box-shadow: 15px 15px 30px rgb(25, 25, 25) ,
+            -10px -10px 20px var(--color-rojo) ;
+        outline: 2px solid var(--color-rojo);
+        
+        }
+
+    /*  Sombra Carta Alura */
+    .cuarta_pag_tarjetas-edit:nth-child(2):hover{
+    box-shadow: 15px 15px 30px rgb(25, 25, 25) ,
+        -10px -10px 20px var(--color-blanco) ;
+        outline: 2px solid var(--color-blanco);
+    }
+    /* Sombra Carta sena */
+
+    .cuarta_pag_tarjetas-edit:nth-child(3):hover{
+    box-shadow: 15px 15px 30px rgb(25, 25, 25) ,
+        -10px -10px 20px var(--color-verde) ;
+        outline: 2px solid var(--color-verde);
+    }
+
+    @keyframes hoverA {
+        0%,33%{outline: 2px solid var(--color-rojo);
+        transition: 0.1ms ease-in;}
+        34%,66%{}
+        67%,100%{}
+      }
+    @keyframes hoverB {
+        0%,33%{}
+        34%,66%{outline: 2px solid var(--color-blanco);}
+        67%,100%{}
+      }
+    @keyframes hoverC {
+        0%,33%{}
+        34%,66%{}
+        67%,100%{outline: 2px solid var(--color-verde);}
+      }
+
+    /* estilización Imagen tarjeta */
+    .cuarta_pag_tarjetas-edit img{
+        width: 50%;
+        border-radius: 8px;
+    }
+    /* Estilización texto Tarjeta */
+    .cuerpo-tarje{
+        font-family: var(--fuente-raleway);
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        font-size: 1.1em;
+        text-align: center;
+    }
+        /* Titulo */
+        .cuerpo-tarje h1{
+        font-weight: 800;
+        color: var(--color-amarillo);
+        }
+        /* Párrafo */
+        .cuerpo-tarje p{
+        font-weight: 400;
+        color: var(--color-blanco);
+        }   
+
+
+/* ----------------------------------------------------------------------------------------------------------- */
+/* Estilización Qunta página */
+.cuerpo_quinta_pag_bloque{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top:110px;
+    gap: 25px;
+    background-image: url(../assets/fond_tres.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0% 0%;
+    height: 530px;
+    border-top: 2px solid var(--color-gris);
+}
+
+    .Bloque_card_proyecto{
+        display: flex;
+        gap: 50px;
+        justify-content: center;
+    }
+
+
+   /* estilización cartas proyectos */
+    
+   .card_proyec{
+    width: 15%;
+    height: 254px;
+    border-radius: 20px;
+    background: var(--color-gris);
+    position: relative;
+    padding: 1.8rem;
+    border: 2px solid #c3c6ce;
+    transition: 0.5s ease-out;
+    overflow: visible;
+   }
+
+   .card_proyec:nth-child(1){
+    box-shadow: 15px 15px 30px rgb(25, 25, 25) ,
+        -10px -10px 20px var(--color-azul) ;
+    }
+    .card_proyec:nth-child(2){
+    box-shadow: 15px 15px 30px rgb(25, 25, 25) ,
+     -10px -10px 20px var(--color-rojo)  ;
+    }
+    
+    .card_proyec:nth-child(3){
+     box-shadow: 15px 15px 30px rgb(25, 25, 25) ,
+     -10px -10px 20px var(--color-verde) ;
+    }
+   
+   
+   .Cuerpo_card_proyecto{
+    font-family: var(--fuente-raleway);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+   }
+
+   .Cuerpo_card_proyecto h2{
+    font-size: 1.5rem;
+    color: var(--color-amarillo);
+    font-weight: 600;
+   }
+   .Cuerpo_card_proyecto img{
+    border-radius: 10px;
+    width: 100%;
+   }
+   .Cuerpo_card_proyecto p{
+    font-weight: 300;
+    color: var(--color-blanco);
+    font: 1.5rem;
+   }
+   
+   .card-button {
+    transform: translate(-50%, 125%);
+    width: 60%;
+    border-radius: 1rem;
+    border: none;
+    background-color: var(--color-amarillo);
+    color: var(--color-gris);
+    font-size: 1rem;
+    font-weight: 800;
+    padding: .5rem 1rem;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    opacity: 0;
+    transition: 0.3s ease-out;
+    font-family: var(--fuente-raleway);
+    cursor: pointer;
+   }
+
+   
+   /*Hover*/
+   .card_proyec:hover {
+    border-color: var(--color-amarillo);
+    box-shadow: 0 4px 18px 0 var(--color-amarillo);
+   }
+   
+   .card_proyec:hover .card-button {
+    transform: translate(-50%, 50%);
+    opacity: 1;
+   }
+
+
+   /* ------------------------------------------------------------------------------------------------------------- */
+
+   /* Estilización sexta página (contacto) */
+
+   .cuerpo_sexta_pag_bloque{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top:110px;
+    gap: 50px;
+    background-image: url(../assets/fondo-conta.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0% 0%;
+    height: 530px;
+    border-top: 2px solid var(--color-gris);
+   }
+
+   /* Estilización sección Información */
+   .sexta_pag_info{
+    font-family: var(--fuente-raleway);
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    width: 30%;
+    height: 50%;
+    background-color: var(--color-blanco);
+    box-shadow: 15px 15px 30px rgb(25, 25, 25);
+    border-radius:30px ;
+   }
+
+   .sexta_pag_info-titulo{
+    font-weight: bold;
+    font-size: 2em;
+    color: var(--color-amarillo);
+   }
+
+   .sexta_pag_info_dato{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-weight: 500;
+   }
+
+   .sexta_pag_info_dato_lin{
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+   }
+
+   .sexta_pag_info_dato_logocorreo::before{
+    content: url(../assets/email.png);
+    padding-left: 5px;
+   }
+   .sexta_pag_info_dato_logocotacto::before{
+    content: url(../assets/call.png);
+   }
+   .sexta_pag_info_dato_logopais::before{
+    content: url(../assets/location.png);
+   }
+  
+   /* esilización sección formulario */
+
+   .sexta_pag_formulario{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--fuente-raleway);
+    width: 40%;
+    
+   }
+
+   /*Textos*/
+   .sexta_pag_formulario_textos{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    justify-content: center;
+    align-items: center;
+   }
+   .sexta_pag_formulario_textos h1{
+    font-size: 2.8em;
+    font-weight: bold;
+    color: var(--color-amarillo);
+   }
+   .sexta_pag_formulario_textos p{
+    text-align:center;
+    color: var(--color-blanco);
+    font-size: 1.5rem;
+   }
+
+   /* estilización inputs */
+
+   .sexta_pag_formulario_inputs{
+    width: 70%;
+    align-content: center;
+   }
+
+   .sextapag_inputs_formulario{
+    width: 100%;
+    height: 40px;
+    border-radius: 12px;
+    text-align: center;
+    justify-content: center;
+   }
+
+   .sextapag_inputs_formulario:hover{
+    outline: 1.5px solid var(--color-amarillo);
+    box-shadow: 2px 2px 4px var(--color-amarillo);
+    transition: 0.1s ease-out;
+   }
+
+   .sextapag_inputs_formulario_boton{
+    background-color: var(--color-amarillo);
+    width: 100%;
+    height: 40px;
+    border-radius:10px;
+    font-weight: 800;
+   }
+ 
+   .sextapag_inputs_formulario_boton:hover{
+    outline: 1px solid var(--color-blanco);
+    box-shadow: 2px 2px 4px var(--color-blanco);
+    transition: 0.1s ease-out;
+    cursor: pointer;
+   }
+
+   /* Estilización Rodapie */
+
+   footer{
+    display:flex;
+    
+    justify-content: center;
+    align-items:center;
+    font-family: var(--fuente-raleway);
+    font-weight: 400;
+    font-size: 1rem;
+    background: var(--color-gris);
+    height: 80px;
+   }
+
+   footer h1{
+    display: flex;
+    align-items: center;
+    gap: 3%;
+    width: 30%;
+    color: var(--color-blanco);
+   }
+
+   footer h1::before{
+    content: url(../assets/copy.png);
+
+   }
+
+   .botones_footer{
+    display: flex;
+    align-items: center;
+    gap: 10%;
+    width: 20%;
+    height: max-content;
+   }
+
+
+
+
+  
+  
+
+  
+  

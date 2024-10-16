@@ -1,0 +1,340 @@
+/* Definición variables de colores y fuentes */
+:root{
+    --color-amarillo:#FCB530;
+    --color-gris:#282828;
+    --color-blanco:#ffffff;
+    --color-rosa:#ED56C2;
+    --color-azul:#238DE8;
+    --color-verde:#01B32C;
+    --color-rojo:#e83b3b;
+    --fuente-raleway:"Raleway",sans-serif;
+}
+
+/* Estilos para disposutivos móviles */
+@media (max-width: 420px){
+
+/* estilización cabecera */
+    .cabecera_img{
+        width: 12%;
+        margin-top: 2%;
+        
+    }
+    .cabecera_list{
+        display: none;
+    }
+/* ------------------------------------------------------------------------------------- */
+    /* Estilización primera página */
+
+    .cuerpo_primera_pag_bloque{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-image: none;
+        background-color: var(--color-gris);
+        margin: 0%;
+        padding-top: 3%;
+        gap: 6%;
+    }
+    
+    .cuerpo_segunda_pag_titulo_blo{
+        width: 80%;
+    }
+    /* primera pagina textos */
+    .cuerpo_primera_pag_text{
+        padding-top: 3%;
+        align-items: center;
+        display: flex;
+        padding-left: 0%;
+        margin-bottom: 0%;
+    }
+    .cuerpo_primera_pag-parra{
+        display: none;
+    }
+    .cuerpo_primera_pag-boton{
+        width: 100%;
+        margin-left: 0%;
+    }
+
+    /* Estilización de imagen primera página */
+    .cuerpo_foto{
+        display: none;
+        justify-content: center;
+        align-items: center;
+        width: 20%;
+    }
+
+    /*Estilización botones redes sociales primera página  */
+    .cuerpo_botones{
+        flex-direction: row;
+        width:300px;
+        padding-right: 0%;
+        align-items: center;
+    }
+    .cuerpo_botones_esti{
+        width:55px;
+        font-size: 1em;
+        border: 1px solid var(--color-blanco);
+        box-shadow: none;
+    
+    }
+
+    .cuerpo_botones_esti span{
+        display: none;
+    }
+
+/* -------------------------------------------------------------------------------------------------------------------------- */
+    /* Estilización de segunda página */
+
+    .cuerpo_segunda_pag_bloque{
+        flex-direction:column;
+        justify-content: center;
+        align-items: center; 
+        padding-top: 2%; 
+        background-image: none;
+        background-color: var(--color-gris);
+    }
+    
+    /* Estilización Texto sobre mí */
+
+    .cuerpo_segunda_pag_titulo{
+        font-size: 0.8em;
+        line-height: 22px;
+        width: 100%;
+    }
+
+    /* estilización titutlo sobre mi y foto */
+
+    .cuerpo_segunda_pag_sobremi{
+        gap:10px;
+    }
+
+    .cuerpo_segunda_pag_titulo_sobremi{
+        display: none;
+    }
+
+    /* Estilización Foto */
+
+    .cuerpo_foto_dos{
+        width: 30%;
+        border: 1px solid var(--color-blanco);
+        border-radius: 10px;
+    }
+
+    /* estilización  bloque habilidades */
+
+    .cuerpo_segunda_pag_botones{
+        padding-left: 5%;
+        width: 95%;
+        gap: 15px;
+        padding-left:0% ;
+    }
+/* Titulo Habilidades */
+    .titulo_habilidades{
+        font-size: 1.5rem;
+    }
+    
+    /* Tarjetas habilidades */
+
+    .cuerpo_segunda_lista_habilidades{
+        display: flex;
+        gap: 3%;
+    }
+    .botones_segunda_pag{
+        width: 80%;
+        font-size: 0.8em;
+        height: 80px;
+        box-shadow: none;
+    }
+
+/* --------------------------------------------------------------------------------------------------------- */
+    /* Estilización tercera página */
+    
+/* seccion Skills */
+    .cuerpo_tercera_pag_bloque_Skills{
+        width: 100%;
+        
+    }
+
+    .tercera_pag_tarjetas_edit{
+        width:30%;
+        font-size: 1em;
+        font-weight: 300;
+        height: 100px;
+        text-align: center;
+    }
+
+    .tercera_pag_tarjetas_edit:nth-child(1){
+    background-position: 80% 90%;
+    background-size: 30%;}
+    
+    .tercera_pag_tarjetas_edit:nth-child(2){
+    background-position: 80% 90%;
+    background-size: 30%;}
+
+    .tercera_pag_tarjetas_edit:nth-child(3){
+    background-position: 80% 90%;
+    background-size: 30%;}
+    .tercera_pag_tarjetas_edit:nth-child(4){
+     background-position: 80% 90%;
+     background-size: 30%;}
+    .tercera_pag_tarjetas_edit:nth-child(5){
+    background-position: 80% 90%;
+    background-size: 30%;}
+
+/* Sección Hobbies */
+.cuerpo_tercera_pag_bloque_hobiies{
+    width: 100%;
+    justify-content: center;
+}
+
+.tercera_pag_tarjetas_edit_hobii{
+    height: 20%;
+    width: 50px;
+    font-size: 1rem;
+    font-weight: 300;
+    height: 120px;
+    text-align: start;
+    writing-mode: vertical-lr;
+    
+}
+.tercera_pag_tarjetas_edit_hobii:nth-child(1){
+    background-position: 80% 90%;
+    background-size: 40%;
+}
+.tercera_pag_tarjetas_edit_hobii:nth-child(2){
+    background-position: 80% 90%;
+    background-size: 40%;
+}
+.tercera_pag_tarjetas_edit_hobii:nth-child(3){
+    background-position: 80% 90%;
+    background-size: 40%;
+}
+.tercera_pag_tarjetas_edit_hobii:nth-child(4){
+    background-position: 88% 90%;
+    background-size: 40%;
+    font-size: 0.8rem;
+}
+.tercera_pag_tarjetas_edit_hobii:nth-child(5){
+    background-position: 80% 90%;
+    background-size: 40%;
+}
+.tercera_pag_tarjetas_edit_hobii:nth-child(6){
+    background-position: 80% 90%;
+    background-size: 40%;
+}
+
+/* --------------------------------------------------------------------------------------------------- */
+/* estilización cuarta página */
+.cuerpo-tarje{
+    font-size: 0.7em;
+}
+
+
+
+/* -------------------------------------------------------------------------------------------------------- */
+/* estilización quitan página */
+
+
+.cuerpo_quinta_pag_bloque{
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+}
+.Bloque_card_proyecto{
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 20px;
+}
+
+.card_proyec{
+    width: 70%;
+    height: 50px;
+}
+
+.Cuerpo_card_proyecto{
+    gap: 10px;
+}
+
+.Cuerpo_card_proyecto h2{
+    font-size: 1em;
+}
+
+.Cuerpo_card_proyecto p{
+    font-size: 0.9em;
+}
+.Cuerpo_card_proyecto img{
+    display: none;
+}
+.card-button{
+    font-size: 0.5em;
+}
+
+/* ----------------------------------------------------------------------------------------------------- */
+/* Estilización sexta página */
+.cuerpo_sexta_pag_bloque{
+    background-size: 300% 100%;
+    gap: 30px;
+    flex-direction: column;
+}
+
+.sexta_pag_info{
+    width: 80%;
+    word-wrap: break-word; /* Dividir palabras largas */
+    word-break: break-word; /* Permitir quiebres de palabra si es necesario */
+    gap: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.sexta_pag_info:nth-child(1){
+    font-size: 0.8em;
+}
+.sexta_pag_info_dato_lin{
+    
+    white-space: normal;   
+}
+
+/* Sección formulario */
+
+.sexta_pag_formulario{
+    width: 90%; 
+    gap: 10px;
+    padding-bottom: 10px;
+}
+
+.sexta_pag_formulario_textos{
+    gap: 15px;
+}
+
+.sexta_pag_formulario_textos h1{
+    font-size: 1.8em;
+    text-align: center;
+    color: var(--color-gris);
+    font-weight: 600;
+}
+
+.sexta_pag_formulario_textos p{
+    font-size: 0.8em;
+}
+
+.sexta_pag_formulario_inputs{
+    width: 90%;
+}
+
+.sextapag_inputs_formulario{
+    height: 30px;
+}
+.sextapag_inputs_formulario_boton{
+    border: 1px solid var(--color-gris);
+    height: 30px;
+}
+
+/* ----------------------------------------------------------------------------------------------------- */
+/* estilización Footer */
+
+footer h1{
+    font-size: 0.9rem;
+}
+
+}
